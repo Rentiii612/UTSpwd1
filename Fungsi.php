@@ -1,6 +1,6 @@
 <?php
 session_start();
-$db = new PDO("sqlite:../db/jamu.db");
+$db = new PDO("sqlite:db/jamu.db"); // PERBAIKAN path
 
 function getAllBahan() {
     global $db;
@@ -44,3 +44,4 @@ function totalHarga() {
     return $total;
 }
 ?>
+
